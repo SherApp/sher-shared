@@ -1,9 +1,12 @@
 {
-  "name": "sher-shared",
-  "version": "1.0.2",
-  "main": "index.js",
+  "name": "@sherapp/sher-shared",
+  "version": "1.0.3",
   "license": "MIT",
+  "repository": "git@github.com:SherApp/sher-shared.git",
   "dependencies": {
     "axios": "^0.21.1"
+  },
+  "scripts": {
+    "prepublish": "tsc"
   }
 }
