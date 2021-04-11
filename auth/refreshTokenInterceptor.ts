@@ -1,7 +1,7 @@
 import { AxiosInstance } from 'axios';
 
 type AuthRequiredCallback = () => void;
-type RefreshTokenFunc = () => Promise<void>;
+type RefreshTokenFunc = () => Promise<any>;
 
 export const refreshTokenInterceptor = (
   retryInstance: AxiosInstance,
