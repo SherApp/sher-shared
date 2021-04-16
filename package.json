@@ -3,10 +3,20 @@
   "version": "1.0.3",
   "license": "MIT",
   "repository": "git@github.com:SherApp/sher-shared.git",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "dependencies": {
     "axios": "^0.21.1"
   },
   "scripts": {
-    "prepublish": "tsc"
+    "prepublish": "tsc",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.22",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "ts-jest": "^26.5.5",
+    "typescript": "^4.2.4"
   }
 }
