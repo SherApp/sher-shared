@@ -5,3 +5,7 @@ export interface UserFile {
   length: number;
   isDeleted: boolean;
 }
+
+export interface FetchFilesCriteria {
+  requiredFileNamePart?: string;
+}

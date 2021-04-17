@@ -1,6 +1,6 @@
 {
   "name": "@sherapp/sher-shared",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "license": "MIT",
   "repository": "git@github.com:SherApp/sher-shared.git",
   "main": "dist/index.js",
