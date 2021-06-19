@@ -5,4 +5,5 @@ export interface Upload {
   progress: number;
   error?: boolean;
   success?: boolean;
+  directoryId: string;
 }
