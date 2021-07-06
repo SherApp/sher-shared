@@ -1,1 +1,1 @@
-export { Upload } from './types';
+export { Upload, UploadStatus } from './types';

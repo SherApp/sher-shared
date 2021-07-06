@@ -1,9 +1,10 @@
+export type UploadStatus = 'uploading' | 'success' | 'cancelled' | 'error';
+
 export interface Upload {
   id: string;
   name: string;
   size: number;
   progress: number;
-  error?: boolean;
-  success?: boolean;
+  status: UploadStatus;
   directoryId: string;
 }

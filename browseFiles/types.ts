@@ -9,3 +9,12 @@ export interface UserFile {
 export interface FetchFilesCriteria {
   requiredFileNamePart?: string;
 }
+
+export interface Directory {
+  id: string;
+  parentDirectoryId?: string;
+  name: string;
+  files: UserFile[];
+  directories: Directory[];
+  isDeleted?: boolean;
+}
