@@ -18,3 +18,9 @@ export interface Directory {
   directories: Directory[];
   isDeleted?: boolean;
 }
+
+export interface CreateDirectoryRequest {
+  id: string;
+  name: string;
+  parentDirectoryId?: string;
+}

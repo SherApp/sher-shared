@@ -1,2 +1,2 @@
-export { User, RegistrationSettings } from './types';
-export { refreshTokenInterceptor } from './refreshTokenInterceptor';
+export * from './types';
+export * from './refreshTokenInterceptor';

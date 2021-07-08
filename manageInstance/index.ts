@@ -1,1 +1,1 @@
-export { PlatformSettings } from './types';
+export * from './types';

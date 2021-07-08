@@ -1,1 +1,1 @@
-export { UserFile, FetchFilesCriteria, Directory } from './types';
+export * from './types';
