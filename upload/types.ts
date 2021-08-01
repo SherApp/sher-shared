@@ -1,7 +1,8 @@
 export type UploadStatus = 'uploading' | 'success' | 'cancelled' | 'error';
 
 export interface Upload {
-  id: string;
+  key: string;
+  url?: string;
   name: string;
   size: number;
   progress: number;
