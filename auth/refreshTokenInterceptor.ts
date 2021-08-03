@@ -1,4 +1,4 @@
-import { AxiosInstance } from 'axios';
+import { AxiosError, AxiosInstance } from 'axios';
 
 type AuthRequiredCallback = () => void;
 type RefreshTokenFunc = () => Promise<any>;
@@ -12,12 +12,12 @@ export const refreshTokenInterceptor = (
   onAuthRequired: AuthRequiredCallback,
   refreshTokenFunc: RefreshTokenFunc,
   refreshEndpoint: string
-) => async (error: any) => {
-  if (error.response.status !== 401) {
-    return;
+) => async (error: AxiosError) => {
+  if (error.response?.status !== 401) {
+    throw error;
   }
 
-  const isRefreshTokenRequest = error.config.url.endsWith(refreshEndpoint);
+  const isRefreshTokenRequest = error.config?.url?.endsWith(refreshEndpoint);
 
   if (isRefreshTokenRequest) {
     onAuthRequired();

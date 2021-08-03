@@ -16,6 +16,7 @@ it('throws an error on refresh token 401 result', async () => {
     jest.fn(),
     refreshEndpoint
   )({
+    // @ts-ignore
     response: {
       status: 401
     },
@@ -38,6 +39,7 @@ it('throws an error on failed refresh', async () => {
     refreshFn,
     '/refresh'
   )({
+    // @ts-ignore
     response: {
       status: 401
     },
@@ -62,6 +64,7 @@ it('retries on successful token refresh', async () => {
     jest.fn(),
     '/refresh'
   )({
+    // @ts-ignore
     response: {
       status: 401
     },
