@@ -1,6 +1,7 @@
 export interface UserFile {
   id: string;
   fileName: string;
+  contentType: string;
   slug: string;
   length: number;
   isDeleted: boolean;
