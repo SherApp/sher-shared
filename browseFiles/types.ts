@@ -17,8 +17,14 @@ export interface Directory {
   name: string;
   files: UserFile[];
   directories: Directory[];
+  path: DirectorySummary[];
   isDeleted?: boolean;
 }
+
+export type DirectorySummary = Pick<
+  Directory,
+  'id' | 'parentDirectoryId' | 'name'
+>;
 
 export interface CreateDirectoryRequest {
   id: string;
